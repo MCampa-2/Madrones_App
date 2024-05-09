@@ -1,0 +1,265 @@
+*{
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif
+}
+
+:root{
+  --jet: #353535ff;
+--white: #ffffffff;
+--french-gray: #d2d7dfff;
+--silver: #bdbbb0ff;
+--battleship-gray: #8a897cff;
+}
+
+
+
+/* Navbar */
+.navbar{
+  background-color: var(--french-gray);
+  color: var(--jet);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 2px 2px 3px var(--jet);
+}
+
+.signin{
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: .2s;
+  padding: 10px;
+}
+
+.results{
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: .2s;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.results:hover{
+  color: var(--battleship-gray);
+}
+
+.signin:hover{
+  color: var(--battleship-gray);
+}
+
+
+/* Home */
+
+.home-page{
+  text-align: center;
+  margin: 100px auto;
+  padding: 20px;
+ 
+}
+
+.title{
+  color: var(--jet);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.instruction{
+  color: var(--jet);
+  font-size: 1.2rem;
+}
+
+.instructions{
+  font-size: 1.2rem;
+  color: var(--battleship-gray);
+  border: 3px solid var(--battleship-gray);
+  padding: 10px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .signin{
+    font-size: 1rem;
+  }
+  .title{
+    font-size: 2.5rem;
+  }
+
+  .instructions{
+    font-size: 1rem;
+    border: 2px solid var(--battleship-gray);
+
+  }
+  .instruction{
+    font-size: 1rem;
+  }
+}
+
+
+
+/* Sing In */
+
+.signin-title{
+  text-align: center;
+  color: var(--jet);
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.signin-form{
+  background-color: var(--french-gray);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 10px;
+  border-radius: 10px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.signin-form label{
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.signin-form input{
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  padding: 5px;
+  font-size: 1.2rem;
+  color: var(--battleship-gray);
+}
+
+.login-button{
+  margin: 10px;
+  padding: 5px;
+  width: 100%;
+  align-self: center;
+  background-color: var(--french-gray);
+  color: var(--jet);
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  outline: line;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px var(--jet);
+}
+
+.login-button:hover{
+  background-color: var(--jet);
+  color: var(--white);
+}
+
+.login-button:active{
+  box-shadow: 1px 1px 3px var(--jet);
+}
+
+/* Form */
+
+.trail-title{
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  color: var(--jet);
+}
+
+.trail-form{
+  border: 2px solid var(--jet);
+  border-radius: 10px;
+  border-color: var(--jet);
+  background-color: var(--white);
+  padding: 10px;
+  margin: 10px;
+}
+
+.true-false{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.trail-form p{
+  font-size: 1.2rem;
+  padding: 10px;
+  color: var(--jet);
+}
+
+.true-false label{
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.trail-submit{
+  padding: 5px;
+  background-color: var(--battleship-gray);
+  color: var(--white);
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.trail-submit:hover{
+  background-color: var(--jet);
+  color: var(--white);
+}
+
+
+input[type='radio']{
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 5px;
+  height: 5px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid var(--jet);
+  background-color: var(--white);
+  
+}
+
+input[type="radio"]:checked{
+  background-color: var(--battleship-gray);
+}
+
+.unchecked input[type="radio"]:not(:checked){
+  background-color: red;
+}
+
+
+/* Results */
+
+.results-container{
+  box-shadow: 2px 2px 3px var(--jet);
+  padding: 20px;
+  margin: 10px;
+  background-color: var(--french-gray);
+}
+
+.results-title{
+  font-size: 2rem;
+  color: var(--jet);
+  padding: 20px;
+  text-align: center;
+}
+
+.scores h2{
+  color: var(--jet);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.motivation p{
+  color: var(--jet);
+  opacity: .8;
+}
