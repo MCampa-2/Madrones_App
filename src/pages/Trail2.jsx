@@ -28,7 +28,7 @@ function Trail2() {
         const percentCorrect = ((newScore / totalQuestions) * 100).toString();
         localStorage.setItem("trail2", Math.round(percentCorrect));
         if(allAnswers === totalQuestions){
-            alert("You've completed Trail 1! You are done for today.")
+            alert("You've completed Trail 2! You are done for today.")
             localStorage.setItem("completedTrail2", true);
             navigate("/")
         }else{

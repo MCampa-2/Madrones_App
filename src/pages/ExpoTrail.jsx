@@ -28,7 +28,7 @@ function ExpoTrail() {
     const percentCorrect = ((newScore / totalQuestions) * 100).toString();
     localStorage.setItem("expoTrail", Math.round(percentCorrect));
     if(allAnswers === totalQuestions){
-        alert("You've completed Trail 1! You are done for today.")
+        alert("You've completed the expo trail! You are done for today.")
         localStorage.setItem("completedExpoTrail", true);
         navigate("/")
     }else{
