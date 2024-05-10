@@ -30,6 +30,7 @@
   font-size: 1.2rem;
   transition: .2s;
   padding: 10px;
+  color: var(--jet);
 }
 
 .results{
@@ -38,6 +39,7 @@
   transition: .2s;
   padding: 10px;
   margin-left: auto;
+  color: var(--jet);
 }
 
 .results:hover{
