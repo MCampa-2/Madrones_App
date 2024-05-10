@@ -16,7 +16,7 @@ export const trail2 = [
     },
     {
         id: 4,
-        question: "The Biltmore Chicken Sandwich is a 6oz chicken breast grilled with BBQ sauce, jack cheese, truffle aioli, piled high on a baguette roll served with french fries.",
+        question: "The Biltmore Chicken Sandwich is a 6oz chicken breast grilled with BBQ sauce, jack cheese, bacon, truffle aioli, piled high on a baguette roll served with french fries.",
         correct: true
     },
     {
