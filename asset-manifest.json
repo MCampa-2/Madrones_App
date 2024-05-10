@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Madrones_App/static/css/main.ee463662.css",
-    "main.js": "/Madrones_App/static/js/main.dab13f45.js",
+    "main.css": "/Madrones_App/static/css/main.fc130f75.css",
+    "main.js": "/Madrones_App/static/js/main.5d29a94d.js",
     "index.html": "/Madrones_App/index.html",
-    "main.ee463662.css.map": "/Madrones_App/static/css/main.ee463662.css.map",
-    "main.dab13f45.js.map": "/Madrones_App/static/js/main.dab13f45.js.map"
+    "main.fc130f75.css.map": "/Madrones_App/static/css/main.fc130f75.css.map",
+    "main.5d29a94d.js.map": "/Madrones_App/static/js/main.5d29a94d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee463662.css",
-    "static/js/main.dab13f45.js"
+    "static/css/main.fc130f75.css",
+    "static/js/main.5d29a94d.js"
   ]
 }
