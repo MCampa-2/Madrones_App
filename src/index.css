@@ -16,6 +16,9 @@
 
 
 /* Navbar */
+
+
+
 .navbar{
   background-color: var(--french-gray);
   color: var(--jet);
@@ -23,7 +26,6 @@
   align-items: center;
   padding: 20px;
   box-shadow: 2px 2px 3px var(--jet);
-  justify-content: right;
 }
 
 .signin{
@@ -32,6 +34,7 @@
   transition: .2s;
   padding: 10px;
   color: var(--jet);
+  
 }
 
 .results{
@@ -40,6 +43,7 @@
   transition: .2s;
   padding: 10px;
   color: var(--jet);
+  margin-left: auto;
 }
 
 .results:hover{
@@ -50,8 +54,30 @@
   color: var(--battleship-gray);
 }
 
+.image-container{
+  max-width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.madrones-door{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
 
 /* Home */
+
+@keyframes instruction {
+  0% {color: var(--jet);}
+  25% {color: var(--battleship-gray);}
+  50% {color: var(--silver);}
+  75% {color: var(--battleship-gray)}
+   100% {color: var(--jet);}
+}
+
+
 
 .home-page{
   text-align: center;
@@ -68,7 +94,11 @@
 
 .instruction{
   color: var(--jet);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  animation-name: instruction;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .instructions{
@@ -83,7 +113,7 @@
 
 @media only screen and (max-width: 600px) {
   .signin, .results{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .title{
     font-size: 2.5rem;
@@ -95,7 +125,7 @@
 
   }
   .instruction{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -165,17 +195,18 @@
 /* Form */
 
 .trail-title{
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   padding: 20px;
   color: var(--jet);
+  font-style: italic;
 }
 
 .trail-form{
   border: 2px solid var(--jet);
   border-radius: 10px;
   border-color: var(--jet);
-  background-color: var(--white);
+  background-color: var(--french-gray);
   padding: 10px;
   margin: 10px;
 }
@@ -222,11 +253,11 @@ input[type='radio']{
   appearance: none;
   width: 5px;
   height: 5px;
-  padding: 5px;
+  padding: 7px;
   border-radius: 50%;
   border: 1px solid var(--jet);
   background-color: var(--white);
-  
+  cursor: pointer;
 }
 
 input[type="radio"]:checked{
