@@ -23,6 +23,7 @@
   align-items: center;
   padding: 20px;
   box-shadow: 2px 2px 3px var(--jet);
+  justify-content: right;
 }
 
 .signin{
@@ -38,7 +39,6 @@
   font-size: 1.2rem;
   transition: .2s;
   padding: 10px;
-  margin-left: auto;
   color: var(--jet);
 }
 
@@ -82,7 +82,7 @@
 
 
 @media only screen and (max-width: 600px) {
-  .signin{
+  .signin, .results{
     font-size: 1rem;
   }
   .title{
